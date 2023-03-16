@@ -1,3 +1,7 @@
 p {
   font-family: Lato;
 }
+
+h2:nth-child(3) {
+  display: none;
+}

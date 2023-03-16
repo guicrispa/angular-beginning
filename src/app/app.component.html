@@ -1,5 +1,11 @@
 <hello name="{{ name }}"></hello>
-<h2>Contador: {{ counter }}s</h2>
+<h2 id="t1">Tempo de atividade: {{ counter }}s</h2>
+<h2 id="t2">Tempo de descanso: {{ rest }}s</h2>
+
+<label for="">Ciclo: </label><input type="number" /> <br />
+
+<br />
+<br />
 <button type="button" (click)="start()">iniciar</button>
 <button type="button" (click)="pause()">pausar</button>
 <button type="button" (click)="stop()">parar</button>

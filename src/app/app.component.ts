@@ -6,26 +6,32 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  name = 'Guilherme Crispim';
-
-  timer = setInterval(() => {
-    // this.counter = this.counter + 1;
-  }, 1000);
+  name = 'Guilherme';
 
   start() {
     setInterval(() => {
-      this.counter = this.counter + 1;
+      this.counter = this.counter - 1;
     }, 1000);
   }
-  counter: number = 0;
+  counter: number = 20;
+  rest: number = 10;
 
   getSeconds() {
     return Math.trunc(this.counter % 60);
   }
 
-  pause() {}
+  pause() {
+    clearInterval(this.counter);
+  }
 
   stop() {
     clearInterval(this.counter);
+    this.counter = 0;
   }
+
+  // zerou(){
+  //   if{
+
+  //   }
+  // }
 }
